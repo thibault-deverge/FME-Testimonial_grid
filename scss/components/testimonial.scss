@@ -47,6 +47,10 @@
 	&__description {
 		font-size: var.$fs-large;
 		line-height: 1.25;
+
+		@media screen and (min-width: var.$bp-desktop) {
+			margin-bottom: 0.5rem;
+		}
 	}
 
 	&__quote {
