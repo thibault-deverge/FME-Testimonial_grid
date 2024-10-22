@@ -46,17 +46,12 @@
 
 	&__description {
 		font-size: var.$fs-large;
-		font-weight: var.$fw-bolder;
 		line-height: 1.25;
 	}
 
 	&__quote {
 		opacity: 0.7;
 		line-height: 1.35;
-
-		@media screen and (min-width: var.$bp-desktop) {
-			margin-top: auto;
-		}
 	}
 }
 

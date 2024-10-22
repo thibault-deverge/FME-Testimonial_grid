@@ -125,17 +125,11 @@ main {
 }
 .testimonial__description {
   font-size: 1.25rem;
-  font-weight: 600;
   line-height: 1.25;
 }
 .testimonial__quote {
   opacity: 0.7;
   line-height: 1.35;
-}
-@media screen and (min-width: 78.125rem) {
-  .testimonial__quote {
-    margin-top: auto;
-  }
 }
 
 .testimonial--purple,
