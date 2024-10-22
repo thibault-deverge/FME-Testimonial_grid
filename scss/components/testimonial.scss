@@ -1,0 +1,119 @@
+@use "../abstracts/variables" as var;
+
+.testimonial {
+	padding: 1.625rem 2rem;
+	padding-bottom: 2rem;
+	border-radius: 8px;
+	box-shadow: 0 -313px 252px 0 rgba(var.$clr-pure-white, 0.5),
+		40px 60px 50px -47px rgba(var.$clr-gray, 0.25);
+
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+	@media screen and (min-width: var.$bp-desktop) {
+		padding-bottom: 1.625rem;
+	}
+
+	&__author {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+
+		& img {
+			width: var.$avatar-size;
+			height: var.$avatar-size;
+			border: 2px solid var.$clr-primary-light;
+			border-radius: 50%;
+		}
+	}
+
+	&__author-info {
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+
+		& h3 {
+			font-size: inherit;
+			line-height: 1;
+		}
+
+		& p {
+			font-size: var.$fs-small;
+			line-height: 1;
+			opacity: 0.5;
+		}
+	}
+
+	&__description {
+		font-size: var.$fs-large;
+		font-weight: var.$fw-bolder;
+		line-height: 1.25;
+	}
+
+	&__quote {
+		opacity: 0.7;
+		line-height: 1.35;
+
+		@media screen and (min-width: var.$bp-desktop) {
+			margin-top: auto;
+		}
+	}
+}
+
+.testimonial--purple,
+.testimonial--black,
+.testimonial--gray {
+	color: var.$clr-pure-white;
+}
+
+.testimonial--purple {
+	position: relative;
+	background-color: var.$clr-primary-dark;
+	color: var.$clr-pure-white;
+
+	& .testimonial__icon {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		right: 1.5rem;
+	}
+
+	& .testimonial__description {
+		position: relative;
+		z-index: 2;
+		margin-bottom: 2.125rem;
+	}
+
+	@media screen and (min-width: var.$bp-desktop) {
+		grid-row: 1 / span 1;
+		grid-column: 1 / span 2;
+
+		& .testimonial__icon {
+			right: 80px;
+		}
+
+		& .testimonial__description {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.testimonial--black {
+	background-color: var.$clr-black;
+
+	@media screen and (min-width: var.$bp-desktop) {
+		grid-row: 2;
+		grid-column: 2 / span 2;
+	}
+}
+
+.testimonial--gray {
+	background-color: var.$clr-gray;
+}
+
+.testimonial--white-2 {
+	@media screen and (min-width: var.$bp-desktop) {
+		grid-row: 1 / span 2;
+	}
+}

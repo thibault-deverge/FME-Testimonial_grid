@@ -1,1 +1,40 @@
 @use "../abstracts/variables" as var;
+
+body {
+	background-color: var.$clr-background-body;
+	color: var.$clr-gray;
+	font-family: var.$font-primary;
+	font-size: var.$fs-medium;
+	font-weight: var.$fw-lighter;
+	line-height: 1.5;
+
+	min-height: 100vh;
+	margin: 4.38rem 1.5rem;
+
+	@media screen and (min-width: var.$bp-desktop) {
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	gap: var.$gap-row;
+
+	@media screen and (min-width: var.$bp-tablet) {
+		display: grid;
+		gap: var.$gap-row var.$gap-col;
+		grid-template-columns: repeat(auto-fill, minmax(350px, auto));
+	}
+
+	@media screen and (min-width: var.$bp-desktop) {
+		max-width: min(75rem, 77.1%);
+		margin: 0 auto;
+
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
