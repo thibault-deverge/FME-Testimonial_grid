@@ -108,6 +108,10 @@
 
 .testimonial--gray {
 	background-color: var.$clr-gray;
+
+	& .testimonial__quote {
+		color: rgba(var.$clr-pure-white, 0.7);
+	}
 }
 
 .testimonial--white-1,

@@ -185,6 +185,9 @@ main {
 .testimonial--gray {
   background-color: #48556a;
 }
+.testimonial--gray .testimonial__quote {
+  color: rgba(255, 255, 255, 0.7);
+}
 
 .testimonial--white-1,
 .testimonial--white-2 {
