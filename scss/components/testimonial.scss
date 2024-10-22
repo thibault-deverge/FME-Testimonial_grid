@@ -112,6 +112,11 @@
 	background-color: var.$clr-gray;
 }
 
+.testimonial--white-1,
+.testimonial--white-2 {
+	background-color: var.$clr-pure-white;
+}
+
 .testimonial--white-2 {
 	@media screen and (min-width: var.$bp-desktop) {
 		grid-row: 1 / span 2;
