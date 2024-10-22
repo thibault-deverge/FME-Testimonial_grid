@@ -4,8 +4,8 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 
 ### Links
 
-- [solution URL](https://your-solution-url.com)
-- [live site URL](https://your-live-site-url.com)
+- [solution URL](https://www.frontendmentor.io/solutions/testimonial-grid---solution-GGDMtsAPd_)
+- [live site URL](https://frontend-mentor-testimonial-grid-six.vercel.app/)
 
 ## Author
 
